@@ -9,6 +9,7 @@
     function registerCtrl(registerSvc){
         
         var rc = this;
+        rc.user = {};
         registerSvc.getCountries().then(function(response){
            rc.myCountries = response; 
         }).catch(function(response){
