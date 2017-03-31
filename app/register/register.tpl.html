@@ -1,0 +1,78 @@
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Sign Up</legend>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-4">
+        <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="col-lg-2 control-label">Username</label>
+      <div class="col-lg-4">
+        <input class="form-control" placeholder="Username" type="text">
+      </div>
+    </div>
+    
+      <div class="form-group">
+      <label class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-4">
+        <input class="form-control" placeholder="Password" type="password">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="col-lg-2 control-label">Age</label>
+      <div class="col-lg-4">
+        <input class="form-control" placeholder="Age" type="text">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="col-lg-2 control-label">Phone</label>
+      <div class="col-lg-4">
+        <input class="form-control" placeholder="Phone" type="text">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="col-lg-2 control-label">Country</label>
+      <div class="col-lg-4">
+        <select class="form-control" ng-model="rc.selectedCountry" ng-options="country.name for country in rc.myCountries"></select>
+      </div>
+    </div>
+    
+      <div class="form-group">
+      <label for="textArea" class="col-lg-2 control-label">Describe Yourself</label>
+      <div class="col-lg-4">
+        <textarea class="form-control" rows="3" id="textArea"></textarea>
+      </div>
+    </div>
+    
+      <div class="form-group">
+      <label class="col-lg-2 control-label">Gender</label>
+      <div class="col-lg-4">
+        <div class="radio">
+          <label>
+            <input name="optionsRadios" id="optionsRadios1" value="M" type="radio">
+            Male
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="optionsRadios" id="optionsRadios2" value="F" type="radio">
+            Female
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>

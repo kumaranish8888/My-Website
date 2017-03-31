@@ -1,0 +1,17 @@
+{
+  "name": "My-Website",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "kumaranish8888 <kumaranish8888@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kumaranish8888/My-Website",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
