@@ -8,11 +8,11 @@
     angular.module("common").directive("numbersOnly", [numbersOnly]);
     angular.module("common").directive("checkUsername", [checkUsername]);
     
-    function brandName(){
+ /*   function brandName(){
         return {
             template: '<a class="navbar-brand" href="#">{{hc.brand}}</a>'  
         };
-    }
+    } */
     
   /*  function navBar(){
         return {
@@ -20,6 +20,16 @@
             restrict: "A"
         };
     } */
+
+    function brandName(){
+        return {
+            restrict:"A",
+            template: '<a class="navbar-brand" href="#">{{companyName}}</a>',
+            scope: {
+                companyName: "@"
+            }
+        };
+    }
     
     function numbersOnly(){
         return {

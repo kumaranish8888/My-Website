@@ -32,6 +32,10 @@
             hc.cartItems++;
         })
         
+        hc.goToThisState = function(){
+            $state.go("home");
+        }
+        
     }
     
 })();
