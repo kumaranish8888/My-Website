@@ -13,13 +13,13 @@
         
         var homeObj = {
             templateUrl: "app/home/home.tpl.html",
-            url:'/home'
+            url:'/'
         };
         
         $stateProvider.state("register", registerObj);
         $stateProvider.state("home", homeObj);
         
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/');
         
     }]);
     
