@@ -1,6 +1,6 @@
 (function(){
     
-    angular.module("project", ["header", "ui.router", "register", "common", "home"]);
+    angular.module("project", ["header", "ui.router", "register", "common", "home", "products"]);
     
     angular.module("project").controller("mainCtrl", [mainCtrl]);
     
@@ -16,8 +16,15 @@
             url:'/'
         };
         
+        var productsObj = {
+            templateUrl: "app/products/products.tpl.html",
+            controller: "productsCtrl as pc",
+            url:'/products'
+        };
+        
         $stateProvider.state("register", registerObj);
         $stateProvider.state("home", homeObj);
+        $stateProvider.state("products", productsObj);
         
         $urlRouterProvider.otherwise('/');
         
