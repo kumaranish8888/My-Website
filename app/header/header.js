@@ -19,6 +19,10 @@
         hc.goToLogin = function(){
             $state.go("login");
         }
+        
+        hc.goToSignup = function(){
+            $state.go("signup");
+        }
     }
     
 })();

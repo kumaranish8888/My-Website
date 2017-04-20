@@ -1,6 +1,6 @@
 (function(){
     
-    angular.module("project", ["header","login", "ui.router"]);
+    angular.module("project", ["header","login", "ui.router", "signup"]);
     
     angular.module("project").controller("mainCtrl", [mainCtrl]);
     
@@ -11,7 +11,13 @@
             controller: "loginCtrl as lc"
         };
         
+        var signupObj = {
+            templateUrl: "app/signup/signup.tpl.html",
+            controller: "signupCtrl as sc"
+        };
+        
         $stateProvider.state("login", loginObj);
+        $stateProvider.state("signup", signupObj);
         
     }]);
     
