@@ -1,0 +1,17 @@
+<table class="table table-hover " ng-controller="productsCtrl as pc">
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Model</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="product in pc.myProducts">
+    <tr>
+      <td>{{product.index}}</td>
+      <td>{{product.Model}}</td>
+      <td>{{product.Price}}</td>
+      <td><button class="btn btn-primary" ng-click="addToCart(products)">Add to Cart</button></td>
+    </tr>
+  </tbody>
+</table> 

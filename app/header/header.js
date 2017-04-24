@@ -10,6 +10,7 @@
         var hc = this;
         hc.cartItems =  0;
         hc.navItems =  headerSvc.getNavItems();
+        
     }
     
     function headerSvc(){

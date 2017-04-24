@@ -1,6 +1,6 @@
 (function(){
     
-    angular.module("project", ["header","register","ui.router"]);
+    angular.module("project", ["header","register","ui.router","products"]);
     
     angular.module("project").controller("mainCtrl", [mainCtrl]);
     
@@ -11,7 +11,13 @@
             controller: "registerCtrl as rc"
         };
         
+        var productsObj = {
+            templateUrl: "app/products/products.tpl.html",
+            controller: "productsCtrl as pc"
+        };
+        
         $stateProvider.state("register", registerObj);
+        $stateProvider.state("products", productsObj);
         
     }]);
     
