@@ -2,7 +2,10 @@ body {
     background-image: url(image1.jpeg);
     background-attachment: fixed;
     background-size: cover;
-}
+    padding-top: 70px;
+} 
+
+
 
 #content {
     position:absolute;
@@ -15,8 +18,67 @@ body {
 }
 
 .new {
-    background-color: antiquewhite;
+    background-color: white;
     padding-top: 60px;
     padding-left: 20px;
     border-radius: 25px;
 }
+
+.homeclass {
+    text-align: center;
+}
+
+.test{
+    height:50px;
+    width:300px;
+}
+
+.moviecontent {
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+}
+
+.movies {
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 20px;
+    border-radius: 25px;
+    padding-bottom: 60px;
+}
+
+.myBtn {
+    width:150px;
+}
+
+.textPadding {
+    padding-bottom: 20px;
+}
+
+.mydiv {
+    float: right;
+}
+
+.fieldBlock
+    {
+    display: block;
+    background-color: rgb(200, 200, 200);
+    width: 200px;
+    float: left;
+    padding: 10px;
+    }
+
+.title
+    {
+    font-weight: bold;
+    }
+
+input
+    {
+    border: 1px solid gray;
+    font-size: 1.1em;
+    }
