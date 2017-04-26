@@ -1,6 +1,6 @@
 (function(){
     
-    angular.module("project", ["header","login", "ui.router", "buy", "rent", "functions", "movies", "games", "employee", "customer", "supplier", "admin", "customerfunctions", "customermovies"]);
+    angular.module("project", ["header","login", "ui.router", "buy", "rent", "functions", "movies", "games", "employee", "customer", "supplier", "admin", "customerfunctions", "customermovies", "adminmovies", "customergames", "admingames"]);
     
     angular.module("project").controller("mainCtrl", [mainCtrl]);
     
@@ -72,6 +72,21 @@
             controller: "customermoviesCtrl as cum"
         };
         
+        var adminmoviesObj = {
+            templateUrl: "app/adminmovies/adminmovies.tpl.html",
+            controller: "adminmoviesCtrl as amc"
+        };
+        
+        var customergamesObj = {
+            templateUrl: "app/customergames/customergames.tpl.html",
+            controller: "customergamesCtrl as cgc"
+        };
+        
+        var admingamesObj = {
+            templateUrl: "app/admingames/admingames.tpl.html",
+            controller: "admingamesCtrl as agc"
+        };
+        
         $stateProvider.state("login", loginObj);
         $stateProvider.state("home", homeObj);
         $stateProvider.state("buy", buyObj);
@@ -85,6 +100,9 @@
         $stateProvider.state("admin", adminObj);
         $stateProvider.state("customerfunctions", customerfunctionsObj);
         $stateProvider.state("customermovies", customermoviesObj);
+        $stateProvider.state("adminmovies", adminmoviesObj);
+        $stateProvider.state("customergames", customergamesObj);
+        $stateProvider.state("admingames", admingamesObj);
         
         $urlRouterProvider.otherwise('/');
         

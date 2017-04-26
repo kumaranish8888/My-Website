@@ -7,8 +7,12 @@
     function customerfunctionsCtrl($state){
         
         var cuf = this;
-        cuf.goToMovies = function(){
+        cuf.goToCustomerMovies = function(){
             $state.go("customermovies");
+        }
+        
+         cuf.goToCustomerGames = function(){
+            $state.go("customergames");
         }
         
     }

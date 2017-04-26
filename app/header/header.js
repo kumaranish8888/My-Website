@@ -14,15 +14,16 @@
             {
                 "key":"games",
                 "value":"Games"
+            },
+            {
+                "key": "admin",
+                "value": "Admin Login"
             }
         ];
         hc.goToLogin = function(){
             $state.go("login");
         }
         
-        hc.goToAdmin =  function(){
-            $state.go("admin");
-        }
         
     }
     

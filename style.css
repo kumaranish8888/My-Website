@@ -69,3 +69,7 @@ body {
 .mypadding {
     padding: 10px;
 }
+
+.mybuttons {
+    width: 300px;
+}

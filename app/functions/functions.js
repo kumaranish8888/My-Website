@@ -7,13 +7,13 @@
     function functionsCtrl($state){
         
         var fs = this;
-        fs.goToMovies = function(){
-            $state.go("movies");
+        fs.goToAdminMovies = function(){
+            $state.go("adminmovies");
         }
         
-        fs.goToGames = function(){
-            $state.go("games");
-        }
+       fs.goToAdminGames = function(){
+           $state.go("admingames");
+       }
         
         fs.goToEmployee = function(){
             $state.go("employee");
