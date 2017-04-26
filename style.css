@@ -1,7 +1,7 @@
 body {
-    background-image: url(image1.jpeg);
+  /*  background-image: url(image1.jpeg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
     padding-top: 70px;
 } 
 
@@ -18,9 +18,10 @@ body {
 }
 
 .new {
-    background-color: white;
+    background-color: dimgrey;
     padding-top: 60px;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
     border-radius: 25px;
 }
 
@@ -59,26 +60,12 @@ body {
     padding-bottom: 20px;
 }
 
-.mydiv {
-    float: right;
+.myimages {
+    height: 200px;
+    width: 200px;
+    padding-bottom: 10px;
 }
 
-.fieldBlock
-    {
-    display: block;
-    background-color: rgb(200, 200, 200);
-    width: 200px;
-    float: left;
+.mypadding {
     padding: 10px;
-    }
-
-.title
-    {
-    font-weight: bold;
-    }
-
-input
-    {
-    border: 1px solid gray;
-    font-size: 1.1em;
-    }
+}

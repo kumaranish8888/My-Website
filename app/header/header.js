@@ -20,9 +20,9 @@
             $state.go("login");
         }
         
-     /*   hc.goToSignup = function(){
-            $state.go("signup");
-        } */
+        hc.goToAdmin =  function(){
+            $state.go("admin");
+        }
         
     }
     

@@ -6,8 +6,8 @@
     
     function loginCtrl($state){
         var lo = this;
-        lo.goToFunctions = function(){
-            $state.go("functions");
+        lo.goToCustomerFunctions = function(){
+            $state.go("customerfunctions");
         }
     }
     

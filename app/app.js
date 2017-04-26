@@ -1,6 +1,6 @@
 (function(){
     
-    angular.module("project", ["header","login", "ui.router", "signup", "buy", "rent", "functions", "movies", "games", "employee", "customer", "supplier"]);
+    angular.module("project", ["header","login", "ui.router", "buy", "rent", "functions", "movies", "games", "employee", "customer", "supplier", "admin", "customerfunctions", "customermovies"]);
     
     angular.module("project").controller("mainCtrl", [mainCtrl]);
     
@@ -10,11 +10,6 @@
             templateUrl: "app/login/login.tpl.html",
             controller: "loginCtrl as lc",
             url : '/'
-        };
-        
-        var signupObj = {
-            templateUrl: "app/signup/signup.tpl.html",
-            controller: "signupCtrl as sc"
         };
         
         var homeObj = {
@@ -62,8 +57,22 @@
             controller:  "supplierCtrl as sc"
         };
         
+        var adminObj = {
+            templateUrl: "app/admin/admin.tpl.html",
+            controller: "adminCtrl as ac"
+        };
+        
+        var customerfunctionsObj = {
+            templateUrl: "app/customerfunctions/customerfunctions.tpl.html",
+            controller: "customerfunctionsCtrl as cuf"
+        };
+        
+        var customermoviesObj = {
+            templateUrl: "app/customermovies/customermovies.tpl.html",
+            controller: "customermoviesCtrl as cum"
+        };
+        
         $stateProvider.state("login", loginObj);
-        $stateProvider.state("signup", signupObj);
         $stateProvider.state("home", homeObj);
         $stateProvider.state("buy", buyObj);
         $stateProvider.state("rent", rentObj);
@@ -73,6 +82,9 @@
         $stateProvider.state("employee", employeeObj);
         $stateProvider.state("customer", customerObj);
         $stateProvider.state("supplier", supplierObj);
+        $stateProvider.state("admin", adminObj);
+        $stateProvider.state("customerfunctions", customerfunctionsObj);
+        $stateProvider.state("customermovies", customermoviesObj);
         
         $urlRouterProvider.otherwise('/');
         
