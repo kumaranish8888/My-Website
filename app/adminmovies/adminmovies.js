@@ -7,7 +7,7 @@
     function adminmoviesCtrl($state){
         var amc = this;
         amc.goToMovies = function(){
-            $state.go("movies")
+            $state.go("movies");
         }
     }
     
