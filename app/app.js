@@ -1,6 +1,6 @@
 (function(){
     
-    angular.module("project", ["header","login", "ui.router", "buy", "rent", "functions", "movies", "games", "employee", "customer", "supplier", "admin", "customerfunctions", "customermovies", "adminmovies", "customergames", "admingames"]);
+    angular.module("project", ["header","login", "ui.router", "buy", "rent", "functions", "movies", "games", "employee", "customer", "supplier", "admin", "customerfunctions", "customermovies", "adminmovies", "customergames", "admingames", "afterbuyone", "afterbuytwo", "payment", "afterrentone", "afterrenttwo", "gamebuyone", "gamebuytwo", "gamerentone", "gamerenttwo"]);
     
     angular.module("project").controller("mainCtrl", [mainCtrl]);
     
@@ -69,7 +69,7 @@
         
         var customermoviesObj = {
             templateUrl: "app/customermovies/customermovies.tpl.html",
-            controller: "customermoviesCtrl as cum"
+            controller: "customermoviesCtrl as cmc"
         };
         
         var adminmoviesObj = {
@@ -85,6 +85,56 @@
         var admingamesObj = {
             templateUrl: "app/admingames/admingames.tpl.html",
             controller: "admingamesCtrl as agc"
+        };
+        
+        var afterbuyoneObj = {
+            templateUrl: "app/afterbuyone/afterbuyone.tpl.html",
+            controller: "afterbuyoneCtrl as aboc"
+        };
+        
+        var signupObj = {
+            templateUrl: "app/signup/signup.tpl.html",
+            controller: "signupCtrl as suc"
+        };
+        
+        var afterbuytwoObj = {
+            templateUrl: "app/afterbuytwo/afterbuytwo.tpl.html",
+            controller: "afterbuytwoCtrl as abtc"
+        };
+        
+        var paymentObj = {
+            templateUrl: "app/payment/payment.tpl.html",
+            controller: "paymentCtrl as payc"
+        };
+        
+        var afterrentoneObj = {
+            templateUrl: "app/afterrentone/afterrentone.tpl.html",
+            controller: "afterrentoneCtrl as aroc"
+        };
+        
+        var afterrenttwoObj = {
+            templateUrl: "app/afterrenttwo/afterrenttwo.tpl.html",
+            controller: "afterrenttwoCtrl as artc"
+        };
+        
+        var gamebuyoneObj = {
+            templateUrl: "app/gamebuyone/gamebuyone.tpl.html",
+            controller: "gamebuyoneCtrl as gboc"
+        };
+        
+        var gamebuytwoObj = {
+            templateUrl: "app/gamebuytwo/gamebuytwo.tpl.html",
+            controller: "gamebuytwoCtrl as gbtc"
+        };
+        
+        var gamerentoneObj = {
+            templateUrl: "app/gamerentone/gamerentone.tpl.html",
+            controller: "gamerentoneCtrl as groc"
+        };
+        
+        var gamerenttwoObj = {
+            templateUrl: "app/gamerenttwo/gamerenttwo.tpl.html",
+            controller: "gamerenttwoCtrl as grtc"
         };
         
         $stateProvider.state("login", loginObj);
@@ -103,6 +153,16 @@
         $stateProvider.state("adminmovies", adminmoviesObj);
         $stateProvider.state("customergames", customergamesObj);
         $stateProvider.state("admingames", admingamesObj);
+        $stateProvider.state("afterbuyone", afterbuyoneObj);
+        $stateProvider.state("signup", signupObj);
+        $stateProvider.state("afterbuytwo", afterbuytwoObj);
+        $stateProvider.state("payment", paymentObj);
+        $stateProvider.state("afterrentone", afterrentoneObj);
+        $stateProvider.state("afterrenttwo",afterrenttwoObj);
+        $stateProvider.state("gamebuyone", gamebuyoneObj);
+        $stateProvider.state("gamebuytwo", gamebuytwoObj);
+        $stateProvider.state("gamerentone", gamerentoneObj);
+        $stateProvider.state("gamerenttwo", gamerenttwoObj);
         
         $urlRouterProvider.otherwise('/');
         

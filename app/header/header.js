@@ -7,17 +7,14 @@
     function headerCtrl($state){
         var hc = this;
         hc.navItems = [
-            {
-                "key":"movies",
-                "value":"Movies"
-            },
-            {
-                "key":"games",
-                "value":"Games"
-            },
+            
             {
                 "key": "admin",
                 "value": "Admin Login"
+            },
+            {
+                "key": "signup",
+                "value": "Customer SignUp"
             }
         ];
         hc.goToLogin = function(){

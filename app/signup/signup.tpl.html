@@ -1,43 +1,49 @@
 <form class="form-horizontal">
   <fieldset>
-    <legend>Legend</legend>
+    <legend>Sign Up</legend>
+      
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Username</label>
+      <div class="col-lg-4">
+        <input class="form-control" id="inputEmail" placeholder="Username" type="text">
+      </div>
+    </div>  
+      
+      <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-4">
+        <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Confirm Password</label>
+      <div class="col-lg-4">
+        <input class="form-control" id="inputPassword" placeholder="Confirm Password" type="password">
+      </div>
+    </div>
+      
     <div class="form-group">
       <label for="inputEmail" class="col-lg-2 control-label">Email</label>
       <div class="col-lg-4">
         <input class="form-control" id="inputEmail" placeholder="Email" type="text">
       </div>
     </div>
+    
+    
     <div class="form-group">
-      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-      <div class="col-lg-4">
-        <input class="form-control" id="inputPassword" placeholder="Password" type="password">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Checkbox
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-      <div class="col-lg-4">
-        <textarea class="form-control" rows="3" id="textArea"></textarea>
-        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-lg-2 control-label">Radios</label>
+      <label class="col-lg-2 control-label">Gender</label>
       <div class="col-lg-4">
         <div class="radio">
           <label>
-            <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
-            Option one is this
+            <input name="gender" value="M" type="radio">
+            Male
           </label>
         </div>
         <div class="radio">
           <label>
-            <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
-            Option two can be something else
+            <input name="gender" value="F" type="radio">
+            Female
           </label>
         </div>
       </div>
