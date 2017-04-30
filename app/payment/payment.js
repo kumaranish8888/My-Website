@@ -10,6 +10,10 @@
             $state.go("customerfunctions");
         }
         
+        payc.makeAlert = function(){
+            alert("Purchase Successful");
+        }
+        
     }
     
 })();
