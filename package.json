@@ -1,0 +1,24 @@
+{
+  "name": "newapplication",
+  "version": "1.0.0",
+  "description": "New website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumaranish8888/My-Website.git"
+  },
+  "author": "Anish Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumaranish8888/My-Website/issues"
+  },
+  "homepage": "https://github.com/kumaranish8888/My-Website#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "underscore": "^1.8.3"
+  }
+}
